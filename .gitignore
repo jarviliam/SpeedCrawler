@@ -1,0 +1,4 @@
+cURL/
+out/
+.vs/
+CMakeSettings.json
