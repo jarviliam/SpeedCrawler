@@ -1,0 +1,12 @@
+﻿// WebCrawler.cpp : Defines the entry point for the application.
+//
+
+#include "WebCrawler.h"
+
+using namespace std;
+
+int main()
+{
+	cout << "Hello CMake." << endl;
+	return 0;
+}
