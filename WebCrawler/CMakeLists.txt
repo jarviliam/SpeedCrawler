@@ -4,7 +4,7 @@
 cmake_minimum_required (VERSION 3.8)
 
 # Add source to this project's executable.
-add_executable (WebCrawler "main.cpp"  "Crawler.h" "Crawler.cpp"   "Parser.h")
+add_executable (WebCrawler "main.cpp"  "Crawler.h" "Crawler.cpp"   "Parser.h" "Parser.cpp")
 target_link_libraries(WebCrawler PUBLIC ${CURL_INCLUDE_DIR})
 target_include_directories(WebCrawler PUBLIC ${CURL_INCLUDE_DIR})
 # TODO: Add tests and install targets if needed.

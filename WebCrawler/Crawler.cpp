@@ -11,7 +11,7 @@ namespace SpeedCrawler
 
 	void Crawler::crawl(const std::string& target) {
 
-		curl_global_init(CURL_GLOBAL_DEFAULT);
+		/*curl_global_init(CURL_GLOBAL_DEFAULT);
 		CURL* curl = curl_easy_init();
 
 		if (curl) {
@@ -24,7 +24,7 @@ namespace SpeedCrawler
 		}
 		else {
 			//throw std::_Xruntime_error("No Connection");
-		}
+		}*/
 	};
 	//Init Lists Here
 void Crawler::start(const std::string& url) {
