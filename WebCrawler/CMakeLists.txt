@@ -3,8 +3,9 @@
 #
 cmake_minimum_required (VERSION 3.8)
 
+find_package(CURL REQUIRED)
 # Add source to this project's executable.
+link_directories(C:/Users/Liam/source/repos/WebCrawler/curl/lib)
 add_executable (WebCrawler "main.cpp"  "Crawler.h" "Crawler.cpp"   "Parser.h" "Parser.cpp")
-target_link_libraries(WebCrawler PUBLIC ${CURL_INCLUDE_DIR})
-target_include_directories(WebCrawler PUBLIC ${CURL_INCLUDE_DIR})
-# TODO: Add tests and install targets if needed.
+include_directories(${$CURL_INCLUDE_DIR})
+target_link_libraries(WebCrawler ${CURL_LIBRARIES})

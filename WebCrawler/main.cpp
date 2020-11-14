@@ -3,11 +3,11 @@
 #include "Crawler.h"
 #include "Parser.h"
 
-
-int main()
-{
-	std::string target = "http://unicase.jp/robots.txt";
-	SpeedCrawler::Parser ps{target};
-	ps.getRobots(target);
-	return 0;
+int main() {
+    std::string target = "www.uniqlo.com";
+    SpeedCrawler::Crawler crawl{target};
+    crawl.start();
+    // SpeedCrawler::Parser ps{target};
+    // ps.getRobots(target);
+    return 0;
 }
